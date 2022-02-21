@@ -12,8 +12,8 @@ public class Initials {
         List <String> nameList = new ArrayList<>(Arrays.asList(name.split(" ")));
 
         for (int i = 0; i<nameList.size();i++){
-            for (int c = 0; c<ignoreList.size();c++ ){
-                if (nameList.get(i).equals(ignoreList.get(c))) {
+            for (var s : ignoreList ){
+                if (nameList.get(i).equals(s)) {
                     nameList.remove(i);
                     i = 0;
                 }
