@@ -24,5 +24,4 @@ public class Initials {
             System.out.print(s.charAt(0) + ".");
         }
     }
-
 }
